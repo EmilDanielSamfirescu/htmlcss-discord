@@ -143,13 +143,26 @@ margin-right: 30px;
 MAIN 
 */
 
+/* .wave {
+    filter: 
+    invert(94%) 
+    sepia(0%) 
+    saturate(586%) 
+    hue-rotate(138deg) 
+    brightness(89%) 
+    contrast(97%);
+} */
+
+
+
 .section-main {
-    height: 900px;
-    padding: 200px;
+    height: 600px;
+    padding: 50px;
 }
 
+
 main > section:nth-child(even) {
-    background-color: lightgray;;
+    background-color: #d3d3d3;;
 }
 
 .square-main {
@@ -169,7 +182,7 @@ main > section:nth-child(even) {
 
 .section-main-bigger {
     height: 1200px;
-    padding: 150px;
+    padding-top: 150px;
 }
 
 .big-main-content {
@@ -209,7 +222,7 @@ main > section:nth-child(even) {
 }
 
 .square-main-bigger > img {
-    height: 400px;
+    height: 75%;
 }
 
 
