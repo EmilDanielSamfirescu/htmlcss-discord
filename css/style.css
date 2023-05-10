@@ -40,6 +40,8 @@ HEADER
 header .header-top {
     height: 80px;
     padding: 20px;
+    background-color: #255EE8;
+    color: white;
 }
 
 .header-top nav ul > li {
@@ -62,7 +64,7 @@ header .header-top {
 }
 
 .header-col-link li {
-    margin: 0 25px
+    margin: 0 10px
 }
 
 .header-col-login {
@@ -75,6 +77,9 @@ header .header-top {
 .header-bottom {
     height: 400px;
     padding: 50px;
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    background-position: top;
 }
 
 .debug .big-header-content {
@@ -167,27 +172,27 @@ hr {
 DEBUG 
 */
 
-.debug .container, .special-container {
+/* .debug .container, .special-container {
     border: 1px solid black;
-}
+} */
 
 
-.debug .header-top {
+/* .debug .header-top {
     background-color: rgb(103, 193, 192);
-}
+} */
 
-.debug .header-bottom {
+/* .debug .header-bottom {
     background-color: rgb(98, 124, 203);
-}
+} */
 
-.debug .nav-bar {
+/* .debug .nav-bar {
     background-color: brown;
-}
+} */
 
 
-.debug .header-col {
+/* .debug .header-col {
     border: 1px dashed black;
-}
+} */
 
 .debug .big-header-content {
     background-color: bisque;
