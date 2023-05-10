@@ -28,6 +28,7 @@ body {
 .my-row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -10px;
 }
 
 .button {
@@ -156,12 +157,15 @@ main > section:nth-child(even) {
 }
 
 .square-main-bigger {
-    width: 60%;
+    width: calc(60% - 40px);
+    margin: 0 20px;
 }
 
 .square-main-smaller {
-    width: 40%;
+    width: calc(40% - 40px);
+    margin: 0 20px;
 }
+
 
 .section-main-bigger {
     height: 1200px;
@@ -178,9 +182,6 @@ main > section:nth-child(even) {
     line-height: 30px;
 }
 
-.square-main-smaller {
-    padding-left: 40px;
-}
 
 .big-main-content > h2 {
     font-size: 44px;
@@ -207,6 +208,10 @@ main > section:nth-child(even) {
     color: white;
 }
 
+.square-main-bigger > img {
+    height: 400px;
+}
+
 
 /* 
 FOOTER 
@@ -219,6 +224,7 @@ FOOTER
 
 .footer-top, .footer-bottom {
     background-color: rgb(38, 38, 38);
+    color: white;
 }
 
 .square-f {
@@ -344,13 +350,13 @@ DEBUG
     border: 1px dashed black;
 } */
 
-.debug .square-main-bigger {
+/* .debug .square-main-bigger {
     background-color: dodgerblue;
 }
 
 .debug .square-main-smaller {
     background-color: palevioletred;
-}
+} */
 
 
 /* .debug .big-main-content {
@@ -358,9 +364,6 @@ DEBUG
     border: 1px dashed red;
 } */
 
-.debug .footer-top, .footer-bottom {
-    color: white;
-}
 
 /* .debug .square-f {
     border: 1px dashed white;
