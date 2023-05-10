@@ -1,0 +1,206 @@
+/* 
+RESET 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+GENERAL 
+*/
+.container {
+    max-width:600px;
+    height: 100%;
+    margin: auto;
+}
+
+
+
+/* 
+HEADER 
+*/
+
+header.main-header{
+background-color: bisque;
+height: 500px;
+}
+
+.upper-header {
+    background-color: aqua;
+    height: 100px;
+}
+
+
+.upper-header nav {
+    display: flex;
+    height: 40px;
+    margin-top: 25px;
+    background-color: coral;
+}
+
+.col-header {
+    border: 1px dashed black;
+    width: calc(100% / 3); 
+    line-height: 40px; 
+}
+
+.--logo {
+    padding-left: 10px;
+}
+
+.--link {
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+} 
+
+.--login {
+    text-align: end;
+    padding-right: 10px;
+}
+
+.big-pink {
+    width: 500px;
+    height: 300px;
+    background-color: pink;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* 
+MAIN 
+*/
+
+main {
+    height: 100%;
+}
+
+main > section {
+    height: 400px;
+}
+
+main > section:nth-child(even) {
+    background-color: lightgrey;
+}
+
+article {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.square {
+height: 80%;
+width: 100%;
+}
+
+.square--blue {
+background-color: aquamarine;
+width: 60%;
+}
+
+.square--pink {
+background-color:deeppink;
+width: calc(100% - 60%);
+}
+
+.special-section {
+    height: 600px;
+}
+
+.special-square{
+    background-color:lightgreen;
+    height: 90%;
+    width: 100%;
+}
+
+/* 
+FOOTER 
+*/
+
+footer {
+    background-color: #23272A;
+    height: 500px;
+}
+
+.upper-footer {
+    height: 400px;
+}
+
+.only-margin {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.big-green {
+    height: 90%;
+    width: 100%;
+    background-color: darkgreen;
+    display: flex;
+}
+
+.col {
+    width: calc(100% / 3);
+}
+
+.green-col {
+    display: flex;
+}
+
+.pink-col {
+    background-color: hotpink;
+}
+
+.small-col {
+width: 100%;
+}
+
+
+.box-footer {
+    background-color: rgb(64, 178, 72);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last-botton {
+    background-color: yellow;
+    height: 20px;
+    border: 2px dashed palevioletred;
+}
+
+hr {
+    color: aliceblue;
+    margin-bottom: 16px;
+}
+
+/* 
+DEBUG 
+*/
+
+.debug, .container {
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.debug, .square, .special-square {
+    border: 1px dashed black;
+}
+
+.debug, .col {
+    border: 1px dashed white;
+}
+
+.debug, .small-col {
+    border: 1px dashed yellow;
+}
+
+.debug
