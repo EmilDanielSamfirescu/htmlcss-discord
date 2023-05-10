@@ -1,0 +1,393 @@
+/* 
+RESET 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+GENERAL 
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.special-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.button {
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.browser > a:link, .browser > a:visited, .scarica-main> a:link, .scarica-main > a:visited{
+    color: white;
+}
+
+
+
+/* 
+HEADER 
+*/
+
+header .header-top {
+    height: 80px;
+    padding: 20px;
+    background-color: #255EE8;
+    color: white;
+}
+
+.header-top nav ul > li {
+    display: inline-block;
+}
+
+.header-col {
+    height: 40px;
+    line-height: 40px;
+}
+
+.header-col-logo {
+    width: calc((100% / 8 ) * 2);
+    padding-left: 10px;
+}
+
+.header-col-link {
+    width: calc((100% / 8 ) * 4);
+    text-align: center;
+}
+
+.header-col-link li {
+    margin: 0 10px
+}
+
+.header-col-login {
+    width: calc((100% / 8 ) * 2);
+    padding-right: 10px;
+    text-align: right;
+}
+
+
+.button-accedi {
+    color: #255EE8;
+}
+
+
+.header-bottom {
+    height: 400px;
+    padding: 50px;
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.big-header-content {
+    height: 300px;
+    text-align: center;
+}
+
+
+.big-header-content h1 {
+    font-size: 40px;
+    padding: 20px 0;
+    color: white;
+}
+
+.big-header-content p {
+    padding-bottom: 30px;
+    color: white;
+}
+
+.button-big-header {
+font-size: 18px;
+padding: 10px 20px;
+border-radius: 50pz;
+}
+.scarica {
+margin-right: 30px;
+}
+
+.browser {
+    color: white;
+    background-color: rgb(37, 37, 37);
+}
+
+.square-main > h2 {
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+
+/* 
+MAIN 
+*/
+
+.section-main {
+    height: 900px;
+    padding: 200px;
+}
+
+main > section:nth-child(even) {
+    background-color: lightgray;;
+}
+
+.square-main {
+    height: 500px;
+}
+
+.square-main-bigger {
+    width: calc(60% - 40px);
+    margin: 0 20px;
+}
+
+.square-main-smaller {
+    width: calc(40% - 40px);
+    margin: 0 20px;
+}
+
+
+.section-main-bigger {
+    height: 1200px;
+    padding: 150px;
+}
+
+.big-main-content {
+    height: 900px;
+    width: 100%;
+}
+
+
+.square-main p {
+    line-height: 30px;
+}
+
+
+.big-main-content > h2 {
+    font-size: 44px;
+    padding-bottom: 40px;
+}
+
+.big-main-content > p {
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.adventure {
+    padding-top: 50px;
+}
+
+.big-main-content {
+    text-align: center;
+}
+
+.scarica-main {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #7288DA;
+    color: white;
+}
+
+.square-main-bigger > img {
+    height: 400px;
+}
+
+
+/* 
+FOOTER 
+*/
+
+.footer-top {
+    height: 500px;
+    padding: 25px;
+}
+
+.footer-top, .footer-bottom {
+    background-color: rgb(38, 38, 38);
+    color: white;
+}
+
+.square-f {
+    height: 450px;
+}
+
+.small-square {
+    width: 30%;
+}
+
+.big-square {
+    width: 70%;
+    display: flex;
+}
+
+.big-square-child {
+    width: 100%;
+}
+
+hr {
+    margin-top: 20px;
+    border-color: #7288DA;
+}
+
+.footer-bottom {
+    height: 100px;
+    padding: 20px;
+}
+
+.bottom-square {
+    width: 100%;
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.push-footer {
+    padding: 5px;
+}
+
+h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #7288DA;
+}
+
+.language > img {
+    height: 18px;
+}
+
+.language {
+    margin-bottom: 20px;
+}
+
+.fa-brands {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.big-square-child > ul {
+    list-style: none;
+}
+
+.big-square-child > ul > li {
+    margin-bottom: 15px;
+}
+
+.big-square-child > ul > li:first-child {
+    color: #7288DA;
+    font-weight: bold;
+}
+
+.button-footer {
+    margin-bottom: 50px;
+}
+
+.logo-footer {
+    margin-bottom: 35px;
+}
+
+.button-footer {
+    font-size: 18px;
+    padding: 5px;
+    background-color: #7288DA;
+    color: white;
+}
+
+
+/* 
+DEBUG 
+*/
+
+/* .debug .container, .special-container {
+    border: 1px solid black;
+} */
+
+
+/* .debug .header-top {
+    background-color: rgb(103, 193, 192);
+} */
+
+/* .debug .header-bottom {
+    background-color: rgb(98, 124, 203);
+} */
+
+/* .debug .nav-bar {
+    background-color: brown;
+} */
+
+
+/* .debug .header-col {
+    border: 1px dashed black;
+} */
+
+/* .debug .big-header-content {
+    background-color: bisque;
+    border: 1px dashed black;
+} */
+
+
+/* .debug .square-main {
+    border: 1px dashed black;
+} */
+
+/* .debug .square-main-bigger {
+    background-color: dodgerblue;
+}
+
+.debug .square-main-smaller {
+    background-color: palevioletred;
+} */
+
+
+/* .debug .big-main-content {
+    background-color: darkolivegreen;
+    border: 1px dashed red;
+} */
+
+
+/* .debug .square-f {
+    border: 1px dashed white;
+} */
+
+/* .debug .small-square {
+    background-color: blueviolet;
+} */
+
+/* .debug .big-square {
+    background-color: cadetblue;
+} */
+
+/* .debug .big-square-child {
+    border: 1px dashed white;
+} */
+
+
+/* .debug .bottom-square {
+    background-color: rgb(66, 186, 186);
+} */
+
+/* .debug .push-footer {
+    border: 2px dashed pink;
+    background-color: coral;
+} */
+
