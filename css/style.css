@@ -41,7 +41,7 @@ a:link, a:visited {
     color: black;
 }
 
-.browser > a:link, .browser > a:visited {
+.browser > a:link, .browser > a:visited, .scarica-main> a:link, .scarica-main > a:visited{
     color: white;
 }
 
@@ -132,13 +132,19 @@ margin-right: 30px;
     background-color: rgb(37, 37, 37);
 }
 
+.square-main > h2 {
+    font-size: 40px;
+    padding: 20px 0;
+}
+
 
 /* 
 MAIN 
 */
+
 .section-main {
-    height: 500px;
-    padding: 50px;
+    height: 900px;
+    padding: 200px;
 }
 
 main > section:nth-child(even) {
@@ -146,7 +152,7 @@ main > section:nth-child(even) {
 }
 
 .square-main {
-    height: 400px;
+    height: 500px;
 }
 
 .square-main-bigger {
@@ -158,14 +164,49 @@ main > section:nth-child(even) {
 }
 
 .section-main-bigger {
-    height: 700px;
-    padding: 50px;
+    height: 1200px;
+    padding: 150px;
 }
 
 .big-main-content {
-    height: 600px;
+    height: 900px;
     width: 100%;
 }
+
+
+.square-main p {
+    line-height: 30px;
+}
+
+.square-main-smaller {
+    padding-left: 40px;
+}
+
+.big-main-content > h2 {
+    font-size: 44px;
+    padding-bottom: 40px;
+}
+
+.big-main-content > p {
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.adventure {
+    padding-top: 50px;
+}
+
+.big-main-content {
+    text-align: center;
+}
+
+.scarica-main {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #7288DA;
+    color: white;
+}
+
 
 /* 
 FOOTER 
@@ -174,6 +215,10 @@ FOOTER
 .footer-top {
     height: 500px;
     padding: 25px;
+}
+
+.footer-top, .footer-bottom {
+    background-color: rgb(38, 38, 38);
 }
 
 .square-f {
@@ -195,6 +240,7 @@ FOOTER
 
 hr {
     margin-top: 20px;
+    border-color: #7288DA;
 }
 
 .footer-bottom {
@@ -212,6 +258,53 @@ hr {
 
 .push-footer {
     padding: 5px;
+}
+
+h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #7288DA;
+}
+
+.language > img {
+    height: 18px;
+}
+
+.language {
+    margin-bottom: 20px;
+}
+
+.fa-brands {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.big-square-child > ul {
+    list-style: none;
+}
+
+.big-square-child > ul > li {
+    margin-bottom: 15px;
+}
+
+.big-square-child > ul > li:first-child {
+    color: #7288DA;
+    font-weight: bold;
+}
+
+.button-footer {
+    margin-bottom: 50px;
+}
+
+.logo-footer {
+    margin-bottom: 35px;
+}
+
+.button-footer {
+    font-size: 18px;
+    padding: 5px;
+    background-color: #7288DA;
+    color: white;
 }
 
 
@@ -247,9 +340,9 @@ DEBUG
 } */
 
 
-.debug .square-main {
+/* .debug .square-main {
     border: 1px dashed black;
-}
+} */
 
 .debug .square-main-bigger {
     background-color: dodgerblue;
@@ -260,45 +353,38 @@ DEBUG
 }
 
 
-.debug .big-main-content {
+/* .debug .big-main-content {
     background-color: darkolivegreen;
     border: 1px dashed red;
-}
+} */
 
 .debug .footer-top, .footer-bottom {
-    background-color: rgb(23, 22, 22);
     color: white;
 }
 
-.debug .square-f {
+/* .debug .square-f {
     border: 1px dashed white;
-}
+} */
 
-.debug .small-square {
+/* .debug .small-square {
     background-color: blueviolet;
-}
+} */
 
-.debug .big-square {
+/* .debug .big-square {
     background-color: cadetblue;
-}
+} */
 
-.debug .big-square-child {
+/* .debug .big-square-child {
     border: 1px dashed white;
-}
+} */
 
 
-
-.debug .footer-bottom {
-    height: 100px;
-    padding: 20px;
-}
-
-.debug .bottom-square {
+/* .debug .bottom-square {
     background-color: rgb(66, 186, 186);
-}
+} */
 
-.debug .push-footer {
+/* .debug .push-footer {
     border: 2px dashed pink;
     background-color: coral;
-}
+} */
 
