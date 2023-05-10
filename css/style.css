@@ -10,11 +10,26 @@ RESET
 /* 
 GENERAL 
 */
-.container {
-    max-width:600px;
-    height: 100%;
-    margin: auto;
+
+body {
+    font-family: 'Open Sans', sans-serif;
 }
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.special-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 
 
@@ -22,101 +37,81 @@ GENERAL
 HEADER 
 */
 
-header.main-header{
-background-color: bisque;
-height: 500px;
+header .header-top {
+    height: 80px;
+    padding: 20px;
 }
 
-.upper-header {
-    background-color: aqua;
-    height: 100px;
+.header-top nav ul > li {
+    display: inline-block;
 }
 
-
-.upper-header nav {
-    display: flex;
+.header-col {
     height: 40px;
-    margin-top: 25px;
-    background-color: coral;
+    line-height: 40px;
 }
 
-.col-header {
-    border: 1px dashed black;
-    width: calc(100% / 3); 
-    line-height: 40px; 
-}
-
-.--logo {
+.header-col-logo {
+    width: calc((100% / 8 ) * 2);
     padding-left: 10px;
 }
 
-.--link {
+.header-col-link {
+    width: calc((100% / 8 ) * 4);
     text-align: center;
 }
 
-a:link, a:visited {
-    color: black;
-    text-decoration: none;
-} 
-
-.--login {
-    text-align: end;
-    padding-right: 10px;
+.header-col-link li {
+    margin: 0 25px
 }
 
-.big-pink {
-    width: 500px;
+.header-col-login {
+    width: calc((100% / 8 ) * 2);
+    padding-right: 10px;
+    text-align: right;
+}
+
+
+.header-bottom {
+    height: 400px;
+    padding: 50px;
+}
+
+.debug .big-header-content {
     height: 300px;
-    background-color: pink;
-    margin: auto;
-    margin-top: 50px;
 }
 
 /* 
 MAIN 
 */
-
-main {
-    height: 100%;
-}
-
-main > section {
-    height: 400px;
+.section-main {
+    height: 500px;
+    padding: 50px;
 }
 
 main > section:nth-child(even) {
-    background-color: lightgrey;
+    background-color: lightgray;;
 }
 
-article {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
+.square-main {
+    height: 400px;
 }
 
-.square {
-height: 80%;
-width: 100%;
+.square-main-bigger {
+    width: 60%;
 }
 
-.square--blue {
-background-color: aquamarine;
-width: 60%;
+.square-main-smaller {
+    width: 40%;
 }
 
-.square--pink {
-background-color:deeppink;
-width: calc(100% - 60%);
+.section-main-bigger {
+    height: 700px;
+    padding: 50px;
 }
 
-.special-section {
+.big-main-content {
     height: 600px;
-}
-
-.special-square{
-    background-color:lightgreen;
-    height: 90%;
     width: 100%;
 }
 
@@ -124,83 +119,134 @@ width: calc(100% - 60%);
 FOOTER 
 */
 
-footer {
-    background-color: #23272A;
+.footer-top {
     height: 500px;
+    padding: 25px;
 }
 
-.upper-footer {
-    height: 400px;
+.square-f {
+    height: 450px;
 }
 
-.only-margin {
+.small-square {
+    width: 30%;
+}
+
+.big-square {
+    width: 70%;
     display: flex;
+}
+
+.big-square-child {
     width: 100%;
-    height: 100%;
-    align-items: center;
 }
 
-.big-green {
-    height: 90%;
+hr {
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    height: 100px;
+    padding: 20px;
+}
+
+.bottom-square {
     width: 100%;
-    background-color: darkgreen;
-    display: flex;
-}
-
-.col {
-    width: calc(100% / 3);
-}
-
-.green-col {
-    display: flex;
-}
-
-.pink-col {
-    background-color: hotpink;
-}
-
-.small-col {
-width: 100%;
-}
-
-
-.box-footer {
-    background-color: rgb(64, 178, 72);
-    height: 80px;
+    height: 78px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.last-botton {
-    background-color: yellow;
-    height: 20px;
-    border: 2px dashed palevioletred;
+.push-footer {
+    padding: 5px;
 }
 
-hr {
-    color: aliceblue;
-    margin-bottom: 16px;
-}
 
 /* 
 DEBUG 
 */
 
-.debug, .container {
-    border: 1px solid rgba(0, 0, 0, 0);
+.debug .container, .special-container {
+    border: 1px solid black;
 }
 
-.debug, .square, .special-square {
+
+.debug .header-top {
+    background-color: rgb(103, 193, 192);
+}
+
+.debug .header-bottom {
+    background-color: rgb(98, 124, 203);
+}
+
+.debug .nav-bar {
+    background-color: brown;
+}
+
+
+.debug .header-col {
     border: 1px dashed black;
 }
 
-.debug, .col {
+.debug .big-header-content {
+    background-color: bisque;
+    border: 1px dashed black;
+}
+
+
+.debug .square-main {
+    border: 1px dashed black;
+}
+
+.debug .square-main-bigger {
+    background-color: dodgerblue;
+}
+
+.debug .square-main-smaller {
+    background-color: palevioletred;
+}
+
+
+.debug .big-main-content {
+    background-color: darkolivegreen;
+    border: 1px dashed red;
+}
+
+.debug .footer-top, .footer-bottom {
+    background-color: rgb(23, 22, 22);
+    color: white;
+}
+
+.debug .square-f {
     border: 1px dashed white;
 }
 
-.debug, .small-col {
-    border: 1px dashed yellow;
+.debug .small-square {
+    background-color: blueviolet;
 }
 
-.debug
+.debug .big-square {
+    background-color: cadetblue;
+}
+
+.debug .big-square-child {
+    border: 1px dashed white;
+}
+
+
+
+.debug .footer-bottom {
+    height: 100px;
+    padding: 20px;
+}
+
+.debug .bottom-square {
+    background-color: rgb(66, 186, 186);
+}
+
+.debug .push-footer {
+    border: 2px dashed pink;
+    background-color: coral;
+}
+
