@@ -30,6 +30,20 @@ body {
     flex-wrap: wrap;
 }
 
+.button {
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.browser > a:link, .browser > a:visited {
+    color: white;
+}
 
 
 
@@ -74,17 +88,50 @@ header .header-top {
 }
 
 
+.button-accedi {
+    color: #255EE8;
+}
+
+
 .header-bottom {
     height: 400px;
     padding: 50px;
     background-image: url("../img/jumbo.png");
     background-size: cover;
-    background-position: top;
+    background-position: center;
 }
 
-.debug .big-header-content {
+.big-header-content {
     height: 300px;
+    text-align: center;
 }
+
+
+.big-header-content h1 {
+    font-size: 40px;
+    padding: 20px 0;
+    color: white;
+}
+
+.big-header-content p {
+    padding-bottom: 30px;
+    color: white;
+}
+
+.button-big-header {
+font-size: 18px;
+padding: 10px 20px;
+border-radius: 50pz;
+}
+.scarica {
+margin-right: 30px;
+}
+
+.browser {
+    color: white;
+    background-color: rgb(37, 37, 37);
+}
+
 
 /* 
 MAIN 
@@ -194,10 +241,10 @@ DEBUG
     border: 1px dashed black;
 } */
 
-.debug .big-header-content {
+/* .debug .big-header-content {
     background-color: bisque;
     border: 1px dashed black;
-}
+} */
 
 
 .debug .square-main {
