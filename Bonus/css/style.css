@@ -28,7 +28,6 @@ body {
 .my-row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -10px;
 }
 
 .button {
@@ -139,86 +138,35 @@ margin-right: 30px;
 }
 
 
+
 /* 
 MAIN 
 */
 
-.wave {
-    filter: 
-    invert(94%) 
-    sepia(0%) 
-    saturate(586%) 
-    hue-rotate(138deg) 
-    brightness(89%) 
-    contrast(97%);
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
+.section-main {
+    height: 700px;
+    padding: 100px;
 }
 
-.weavy {
-    position: relative;
+.--colored {
+    background-color: #E5E5E5;
 }
-
-.wave2 {
-    filter: 
-    invert(94%) 
-    sepia(0%) 
-    saturate(586%) 
-    hue-rotate(138deg) 
-    brightness(89%) 
-    contrast(97%);
-    transform: rotate(180deg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-
-
-.section-main-first  {
-    height: 800px;
-    padding-top: 80px
-}
-
-.section-main-second {
-    height: 500px;
-    padding-top: 80px;
-}
-
-.section-main-third {
-    height: 900px;
-    padding-top: 250px;
-}
-
-
-
-
-main > section:nth-child(even) {
-    background-color: #d3d3d3;;
-}
-
 .square-main {
     height: 500px;
-
 }
 
 .square-main-bigger {
-    width: calc(60% - 40px);
-    margin: 0 20px;
+    width: 60%;
 }
 
 .square-main-smaller {
-    width: calc(40% - 40px);
-    margin: 0 20px;
+    width: 40%;
 }
 
 
 .section-main-bigger {
     height: 1200px;
-    padding-top: 150px;
+    padding: 150px;
 }
 
 .big-main-content {
@@ -258,8 +206,27 @@ main > section:nth-child(even) {
 }
 
 .square-main-bigger > img {
-    height: 75%;
+    width: 100%;
 }
+
+.wave-top::before {
+    content: '';
+    display: block;
+    height: 100px;
+    background-image: url('../img/wave.svg');
+    opacity: 0.1;
+    
+}
+
+.wave-bottom::before{
+    content: '';
+    display: block;
+    height: 100px;
+    background-image: url('../img/wave.svg');
+    opacity: 0.1;
+    transform: rotate(180deg);
+}
+
 
 
 /* 
@@ -399,13 +366,13 @@ DEBUG
     border: 1px dashed black;
 } */
 
-/* .debug .square-main-bigger {
+.debug .square-main-bigger {
     background-color: dodgerblue;
 }
 
 .debug .square-main-smaller {
     background-color: palevioletred;
-} */
+}
 
 
 /* .debug .big-main-content {
