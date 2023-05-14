@@ -144,8 +144,8 @@ MAIN
 */
 
 .section-main {
-    height: 700px;
-    padding: 100px;
+    height: 500px;
+    padding: 50px;
 }
 
 .--colored {
@@ -165,8 +165,8 @@ MAIN
 
 
 .section-main-bigger {
-    height: 1200px;
-    padding: 150px;
+    height: 1000px;
+    padding: 50px;
 }
 
 .big-main-content {
@@ -191,7 +191,13 @@ MAIN
 }
 
 .adventure {
-    padding-top: 50px;
+    padding-top: 20px;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    width: 400px;
+    margin: auto;
 }
 
 .big-main-content {
@@ -366,13 +372,13 @@ DEBUG
     border: 1px dashed black;
 } */
 
-.debug .square-main-bigger {
+/* .debug .square-main-bigger {
     background-color: dodgerblue;
 }
 
 .debug .square-main-smaller {
     background-color: palevioletred;
-}
+} */
 
 
 /* .debug .big-main-content {
